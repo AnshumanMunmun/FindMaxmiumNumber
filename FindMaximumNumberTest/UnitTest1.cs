@@ -50,5 +50,26 @@ namespace FindMaximumNumberTest
             float num = max.FindMaxFloatNumber(1.2f, 2.4f, 3.1f);
             Assert.AreEqual(num, 3.1f);
         }
+        [Test]
+        public void GivenMaxStringFirstNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximumNumb max = new FindMaximumNumb();
+            string name = max.FindMaxStringNumber("Truck","Car", "Bike");
+            Assert.AreEqual(name,"Truck");
+        }
+        [Test]
+        public void GivenMaxStringSecondNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximumNumb max = new FindMaximumNumb();
+            string name = max.FindMaxStringNumber("Car", "Truck", "Bike");
+            Assert.AreEqual(name, "Truck");
+        }
+        [Test]
+        public void GivenMaxStringThirdNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximumNumb max = new FindMaximumNumb();
+            string name = max.FindMaxStringNumber("Car", "Bike", "Truck");
+            Assert.AreEqual(name, "Truck");
+        }
     }
 }
