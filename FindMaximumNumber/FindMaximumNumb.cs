@@ -26,14 +26,14 @@ namespace FindMaximumNumber
             else
                 return thirdNum;
         }
-        public string FindMaxStringNumber(string firstString, string secondString, string thirdString)
+        public string FindMaxStringNumber(string firstString, string secondNum, string thirdNum)
         {
-            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0)
+            if (firstString.CompareTo(secondNum) > 0 && firstString.CompareTo(thirdNum) > 0)
                 return firstString;
-            if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0)
-                return secondString;
+            if (secondNum.CompareTo(firstString) > 0 && secondNum.CompareTo(thirdNum) > 0)
+                return secondNum;
             else
-                return thirdString;
+                return thirdNum;
         }
     }
 }
